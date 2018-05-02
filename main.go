@@ -91,7 +91,8 @@ func main() {
 		}
 
 		io.WriteString(stdin, fmt.Sprintf("%s\n", p.Password))
-		io.WriteString(stdin, fmt.Sprintf("login: %s\n", p.Username))
+		io.WriteString(stdin, fmt.Sprintf("---\n"))
+		io.WriteString(stdin, fmt.Sprintf("user: %s\n", p.Username))
 		io.WriteString(stdin, fmt.Sprintf("email: %s\n", p.Email))
 		io.WriteString(stdin, fmt.Sprintf("title: %s\n", p.Title))
 		io.WriteString(stdin, fmt.Sprintf("notes: %s\n", p.Notes))
